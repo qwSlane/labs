@@ -20,14 +20,16 @@ int test_average()
      {
          for(j = 0; j < 3; j++)
          {
-            if(j == 1)
-             arr[i][j]=2;  
+            
             arr[i][j]=3;
+            if(j == 1)
+             arr[i][j]=2;
+              
          }
      }
 
-        assert(average(arr, 3, 0) == 3);
-        assert(average(arr, 3, 1) == 2);
+        assert(average(arr, 3, 0) == 3.0);
+        assert(average(arr, 3, 1) == 2.0);
         
 }
 
@@ -35,6 +37,7 @@ int test_average()
 
 int main()
 {
+
     test_average();
     printf("Test succesfully completed");
     return 0;

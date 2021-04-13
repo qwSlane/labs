@@ -8,14 +8,13 @@
 
 float average(int **arr, int counter, int pos)
 {
-  float average;
+  float average = 0;
   int i;
 
   for (i = 0; i < counter; i++)
   {
     average += arr[i][pos];
   }
-
   average /= counter;
   return average;
 }
@@ -53,7 +52,9 @@ int main()
   }
 
   average_s = average(arr, counter, 0);
+
   average_h = average(arr, counter, 1);
+
   average_v = average(arr, counter, 2);
 
   usage = (average_h * average_s * average_v);

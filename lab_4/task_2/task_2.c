@@ -89,6 +89,8 @@ int main()
 
   text = buffer;
 
+  if(fopen("input.txt", "r"))
+  {
   file = fopen("input.txt", "r");
 
   fgets(buffer, 80, file);
@@ -123,6 +125,10 @@ int main()
   fclose(file);
 
   printf("%s\n", text);
+
+  }else
+  printf("Error");
 }
+  
 
 #endif

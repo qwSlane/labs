@@ -58,7 +58,7 @@ void test_5()
 
 }
 
-#undef main
+#undef task_2
 
 int main()
 {

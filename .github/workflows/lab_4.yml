@@ -15,6 +15,6 @@ jobs:
         cd lab_4/task_1 
         make test
         ./test
-        cd lab_4/task2/
+        cd lab_4/task_2/
         make test
         ./test

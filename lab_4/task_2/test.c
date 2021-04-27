@@ -16,7 +16,6 @@ void test_1()
 
 }
 
-
 void test_2()
 {
   char* answer, *text;

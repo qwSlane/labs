@@ -7,20 +7,29 @@
 void push(List **head, char *data)
 {
     List *tmp = (List *)malloc(sizeof(List));
-    tmp->pnext = (*head);
-    tmp->data = data;
-
-    (*head) = tmp;
+    if (tmp != NULL)
+    {
+        tmp->pnext = (*head);
+        tmp->data = data;
+        (*head) = tmp;
+    }
+    else
+        printf("memory allocation error");
 }
 
 Node *freenode(char *data, Node *parent)
 {
     Node *tmp = (Node *)malloc(sizeof(Node) * 1);
-    tmp->left = NULL;
-    tmp->right = NULL;
-    tmp->data = data;
-    tmp->root = parent;
-    return tmp;
+    if (tmp != NULL)
+    {
+        tmp->left = NULL;
+        tmp->right = NULL;
+        tmp->data = data;
+        tmp->root = parent;
+        return tmp;
+    }
+    else
+        printf("memory allocation error");
 }
 
 void add(Node **root, char *data)

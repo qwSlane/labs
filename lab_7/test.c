@@ -30,7 +30,7 @@ void templates()
 int main()
 {
 
-    templates();
+    //templates();
     printf("Test succesfully completed");
     return 0;
 }

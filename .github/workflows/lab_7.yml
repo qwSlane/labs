@@ -1,0 +1,21 @@
+name: lab7
+
+on:
+  push:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+    - run: |
+        cd lab_7
+        make test
+        make runtest
+        make checkcov
+        bash <(curl -s https://codecov.io/bash)
+        
+      

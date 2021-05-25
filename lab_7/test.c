@@ -12,7 +12,6 @@ void templates()
     char *name, *route;
     float cost;
     int places, day, year, month;
-    readfile(&cr);
     places = day = year = month = 0;
     cost = 1;
     name = "test";
@@ -30,7 +29,7 @@ void templates()
 int main()
 {
 
-    //templates();
+    templates();
     printf("Test succesfully completed");
     return 0;
 }

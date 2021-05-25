@@ -1,7 +1,6 @@
 #ifndef LAB_5H
 #define LAB_5H
 
-
 typedef struct list
 {
   char *field;
@@ -19,7 +18,5 @@ void leadingzeros(int max, int min, int *a, char *str);
 int *minus(int *a, int *b, int max);
 char *subtraction(char *m, char *n);
 char *Nod(char *a, char *b);
-
-
 
 #endif

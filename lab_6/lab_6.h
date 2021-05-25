@@ -21,6 +21,7 @@ void add(Node **root, char *data);
 int proof(char *data);
 
 void treescan(Node *root, List **tmp);
+
 char *pop(List **stack);
 void push(List **head, char *data);
 

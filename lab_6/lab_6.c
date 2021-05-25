@@ -134,7 +134,7 @@ int main()
     tree = NULL;
     stack = NULL;
 
-    add(&tree, a);
+    add(&tree, a);  
     add(&tree, b);
     add(&tree, c);
 

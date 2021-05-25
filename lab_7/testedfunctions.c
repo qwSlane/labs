@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <conio.h>
-
 #include "testedfunctions.h"
 
 void readfile(List **cr)

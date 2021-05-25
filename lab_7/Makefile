@@ -1,7 +1,7 @@
 main:
-	gcc -pedantic -o santaren list.c santaren.c
+	gcc -o santaren list.c santaren.c
 test:
-	gcc -coverage -pedantic -o test testedfunctions.c test.c -lm
+	gcc -coverage -o test testedfunctions.c test.c -lm
 
 runtest:
 	./test

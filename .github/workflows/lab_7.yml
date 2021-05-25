@@ -14,6 +14,7 @@ jobs:
       run: |
         cd lab_7
         make test
+        ls
         make runtest
         make checkcov
         bash <(curl -s https://codecov.io/bash)

@@ -7,9 +7,22 @@
 
 void templates()
 {
+    TourTemplate *templ;
     List *cr;
+    char *name, *route;
+    float cost;
+    int places, day, year, month;
     readfile(&cr);
+    places = day = year = month = 0;
+    cost = 1;
+    name = "test";
+    route = "t->e->s->t";
+    templ = create(name, cost, places, route, day, year, month);
+    assert(templ != NULL);
+    add(&cr, templ);
+    
     assert(cr != NULL);
+    free(templ);
     free(cr);
     return;
 }

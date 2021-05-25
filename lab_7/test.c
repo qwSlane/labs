@@ -22,6 +22,8 @@ void templates()
     add(&cr, templ);
     show(cr);
     assert(cr != NULL);
+    free(templ);
+    free(cr);
     return;
 }
 
